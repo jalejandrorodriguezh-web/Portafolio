@@ -343,14 +343,28 @@
             .project-meta { position: static; }
             .av-row-flexible, .layout-foto-grid, .sol-grid { grid-template-columns: 1fr; }
             .layout-foto-grid .foto-full { grid-column: auto; }
-            nav { padding: 0 5vw; }
-            nav a { padding: 20px 10px; font-size: 0.65rem; }
+            
+            nav { padding: 0 2vw; justify-content: center; }
+            nav a { padding: 15px 3vw; font-size: 0.6rem; letter-spacing: 0.02em; }
             .logo { display: none; }
+            
+            .info-meta-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 12px 0;
+            }
+            .info-meta-list li span:first-child {
+                font-size: 0.7rem;
+                color: var(--accent-color);
+            }
+
             footer { flex-direction: column; gap: 15px; text-align: center; }
             .footer-links { justify-content: center; }
-            }
+        }
     </style>
 </head>
+<body>
     <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
     <nav>
         <div class="logo">JARH — Portfolio</div>
@@ -620,7 +634,7 @@ Coproducción del tema musical Bonds of Hope (Segundo puesto en concurso para el
                 <div class="project-meta">
                     <span class="project-tag">Paisaje / Luz</span>
                     <h3 class="project-title">Fisuras de la Luz</h3>
-                    <p class="project-desc">Estudio visual sobre cómo la luz del sol transforma los espacios. Un recorrido por diferentes escenarios para observar la temperatura del color en el agua, la arquitectura y el entorno urbano..</p>
+                    <p class="project-desc">Estudio visual sobre cómo la luz del sol transforma los espacios. Un recorrido por diferentes escenarios para observar la temperatura del color en el agua, la arquitectura y el entorno urbano.</p>
                 </div>
                 <div class="sol-grid">
                     <div class="sol-left-stack">
