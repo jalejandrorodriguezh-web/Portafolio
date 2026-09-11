@@ -333,7 +333,7 @@
 
         footer a:hover { border-color: var(--text-color); }
 
-/* ==========================================================================
+        /* ==========================================================================
            7. ADAPTACIÓN PARA DISPOSITIVOS MÓVILES (RESPONSIVE)
            ================================================================---------- */
         @media (max-width: 900px) {
@@ -343,28 +343,14 @@
             .project-meta { position: static; }
             .av-row-flexible, .layout-foto-grid, .sol-grid { grid-template-columns: 1fr; }
             .layout-foto-grid .foto-full { grid-column: auto; }
-            
-            /* Ajustes específicos para móviles */
-            nav { padding: 0 2vw; justify-content: center; }
-            nav a { padding: 15px 3vw; font-size: 0.6rem; letter-spacing: 0.02em; }
+            nav { padding: 0 5vw; }
+            nav a { padding: 20px 10px; font-size: 0.65rem; }
             .logo { display: none; }
-            
-            /* Hace que los datos de contacto bajen con holgura en celular */
-            .info-meta-list li {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-                padding: 12px 0;
-            }
-            .info-meta-list li span:first-child {
-                font-size: 0.7rem;
-                color: var(--accent-color);
-            }
-
             footer { flex-direction: column; gap: 15px; text-align: center; }
             .footer-links { justify-content: center; }
-        }
-
+            }
+    </style>
+</head>
     <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
     <nav>
         <div class="logo">JARH — Portfolio</div>
