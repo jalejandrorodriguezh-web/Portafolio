@@ -333,7 +333,7 @@
 
         footer a:hover { border-color: var(--text-color); }
 
-        /* ==========================================================================
+/* ==========================================================================
            7. ADAPTACIÓN PARA DISPOSITIVOS MÓVILES (RESPONSIVE)
            ================================================================---------- */
         @media (max-width: 900px) {
@@ -343,15 +343,27 @@
             .project-meta { position: static; }
             .av-row-flexible, .layout-foto-grid, .sol-grid { grid-template-columns: 1fr; }
             .layout-foto-grid .foto-full { grid-column: auto; }
-            nav { padding: 0 5vw; }
-            nav a { padding: 20px 10px; font-size: 0.65rem; }
+            
+            /* Ajustes específicos para móviles */
+            nav { padding: 0 2vw; justify-content: center; }
+            nav a { padding: 15px 3vw; font-size: 0.6rem; letter-spacing: 0.02em; }
             .logo { display: none; }
+            
+            /* Hace que los datos de contacto bajen con holgura en celular */
+            .info-meta-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 12px 0;
+            }
+            .info-meta-list li span:first-child {
+                font-size: 0.7rem;
+                color: var(--accent-color);
+            }
+
             footer { flex-direction: column; gap: 15px; text-align: center; }
             .footer-links { justify-content: center; }
         }
-    </style>
-</head>
-<body>
 
     <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
     <nav>
@@ -402,7 +414,7 @@
         
                     <ul class="info-meta-list">
                         <li><span>Enfoque</span> <span>Acústica / Audio / Fotografía</span></li>
-                        <li><span>Correo</span> <span>jalejandrorodriguezh@gmail.com</span></li>
+                        <li><span>Correo</span><a href="mailto:jalejandrorodriguezh@gmail.com">jalejandrorodriguezh@gmail.com</a></li>
                         <li><span>Instagram</span> <a href="https://www.instagram.com/alejo.r.holguin?stkn=MTg0djcwOTMwZXhjbw==" target="_blank">@alejo.r.holguin</a></li>
                         <li><span>LinkedIn</span> <a href="https://co.linkedin.com/in/juan-alejandro-rodriguez-holguin-1b8239227" target="_blank">Juan Alejandro Rodríguez Holguín</a></li>
                     </ul>
